@@ -1,3 +1,4 @@
+--45
 local cloneref = (cloneref or clonereference or function(instance: any)
 	return instance
 end)
@@ -5361,7 +5362,7 @@ do
                 return
             end
 
-            if input.UserInputType == Enum.UserInputType.MouseButton2 then
+            if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.MouseButton2 then
                 Dragging = true
                 LastMousePos = input.Position
             elseif input.UserInputType == Enum.UserInputType.Touch and not Pinching then
@@ -5379,7 +5380,7 @@ do
                 return
             end
 
-            if input.UserInputType == Enum.UserInputType.MouseButton2 then
+            if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.MouseButton2 then
                 Dragging = false
             elseif input.UserInputType == Enum.UserInputType.Touch then
                 Dragging = false
